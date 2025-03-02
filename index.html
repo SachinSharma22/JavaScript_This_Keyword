@@ -10,7 +10,7 @@
             If the function being referenced is a regular function, "this" references the global object. 
             If the function that is being referenced is a method in an object, this references the object itself.
         </p>
-        <script>
+        <!-- <script>
 
             var value = 50;
             function my_Function(){
@@ -21,6 +21,17 @@
 
             my_Function();
 
+        </script> -->
+
+        <script>
+            const random = {
+                name:"sachin",
+                info(){
+                    console.log("Hii my name is : "+ this.name);
+                }
+            }
+
+            random.info();
         </script>
     </body>
 </html>
