@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>This Keyword</title>
+    </head>
+    <body>
+        <h1>This Keyword in JavaScript</h1>
+        <p>
+            'This' Keyword refers to an object which is executing the current piece of code.
+            In Simpel terms, "this" keyword references the object that is executing the current function.
+            If the function being referenced is a regular function, "this" references the global object. 
+            If the function that is being referenced is a method in an object, this references the object itself.
+        </p>
+        <script>
+
+            var value = 50;
+            function my_Function(){
+                var value = 100;
+                alert("value "+ value);
+                alert("THis value " + this.value);
+            }
+
+            my_Function();
+
+        </script>
+    </body>
+</html>
