@@ -26,8 +26,12 @@
         <script>
             const random = {
                 name:"sachin",
+                video:["JavaScript","This","Keyword"],
                 info(){
-                    console.log("Hii my name is : "+ this.name);
+                    // console.log("Hii my name is : "+ this.name);
+                    this.video.forEach(function(tag){
+                        console.log(this.name, tag);
+                    },this)
                 }
             }
 
